@@ -8,6 +8,7 @@
               <include name="testReadMoreBtn"/>
               <include name="testScrollToFooter"/>
               <include name="testSearchInput"/>
+              <include name="testDownloadsLink"/>
        </methods>
     </classes>
   </test>

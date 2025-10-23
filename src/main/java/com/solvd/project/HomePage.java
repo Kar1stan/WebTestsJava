@@ -32,6 +32,9 @@ public class HomePage extends AbstractPage {
     @FindBy(css = "a[href='https://www.selenium.dev/documentation/ide/']")
     private ExtendedWebElement seleniumIDEOption;
 
+    @FindBy(css = "a[href='/downloads']")
+    private ExtendedWebElement downloadsBtn;
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -65,6 +68,11 @@ public class HomePage extends AbstractPage {
         // Waiting "Selenium IDE" to show up.
         seleniumIDEOption.waitUntil(ExpectedConditions.elementToBeClickable(seleniumIDEOption.getElement()), 10);
         seleniumIDEOption.click();
+    }
+
+    public void clickDownloadsLink() {
+        downloadsBtn.waitUntil(ExpectedConditions.elementToBeClickable(downloadsBtn.getElement()), 10);
+        downloadsBtn.click();
     }
 
     public boolean isSearchVisible() {

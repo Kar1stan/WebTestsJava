@@ -86,4 +86,19 @@ public class TestSelenium implements IAbstractTest {
         Assert.assertTrue(currentUrl.contains("documentation/ide/"), "Should navigate to Selenium IDE page");
         driver.quit();
     }
+
+    @Test(priority = 5)
+    @MethodOwner(owner = "vladislav.karastan")
+    @TestLabel(name = "download", value = { "web", "regression" })
+    public void testDownloadsLink() {
+        System.out.println("=== Testing Downloads Link ===");
+        WebDriver driver = new ChromeDriver();
+        HomePage homePage = new HomePage(driver);
+        homePage.open();
+
+        homePage.clickDownloadsLink();
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertTrue(currentUrl.contains("/downloads/"), "Should navigate to downloads page");
+        driver.quit();
+    }
 }
