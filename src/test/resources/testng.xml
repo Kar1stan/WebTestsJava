@@ -1,8 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="WebTestsSuite">
-  <test name="ChromeTest">
+  <test name="SeleniumTest">
     <classes>
       <class name="com.solvd.project.TestSelenium"/>
+       <methods>
+              <include name="testHeader"/>
+              <include name="testReadMoreBtn"/>
+              <include name="testScrollToFooter"/>
+              <include name="testSearchInput"/>
+       </methods>
     </classes>
   </test>
 </suite>

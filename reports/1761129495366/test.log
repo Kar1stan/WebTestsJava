@@ -1,0 +1,11 @@
+[2025-10-22 10:38:15] [1] [INFO] 
+=========== WebDriver configuration ===========
+-------------- Driver capabilities ------------
+===============================================
+
+[2025-10-22 10:38:15] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-10-22 10:38:17] [1] [INFO] Set thread-count=1
+[2025-10-22 10:38:17] [1] [INFO] Set data-provider-thread-count=1
+[2025-10-22 10:38:17] [1] [INFO] CARINA_CORE_VERSION: 1.3.0
+[2025-10-22 10:38:19] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2025-10-22 10:38:19] [1] [INFO] RESULT #1: TEST [SeleniumTest - testBrowser] FAIL [log=file://C:\TestProjects\HomeworksJava\WebTests\reports\1761129495366/c7bf65a4-7c0b-4570-a877-dc6513e93a1e/test.log]
