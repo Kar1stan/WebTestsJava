@@ -3,8 +3,8 @@ package com.solvd.project;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import com.solvd.project.HomePage;
 
+import com.solvd.project.web.HomePage;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import com.zebrunner.carina.core.IAbstractTest;
 
@@ -32,14 +32,10 @@ public class TestSelenium implements IAbstractTest {
         HomePage homePage = new HomePage(driver);
         homePage.open();
 
-        String title = homePage.getTitle();
-        System.out.println("Page title: " + title);
-
         String headerText = homePage.getHeaderText();
         System.out.println("Header text: " + headerText);
 
         Assert.assertTrue(headerText.contains("Selenium"), "Header should contain 'Selenium'");
-
         driver.quit();
     }
 
@@ -81,6 +77,7 @@ public class TestSelenium implements IAbstractTest {
         HomePage homePage = new HomePage(driver);
         homePage.open();
 
+        homePage.clickNavigationBtn();
         homePage.searchAndSelectSeleniumIDE();
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains("documentation/ide/"), "Should navigate to Selenium IDE page");
@@ -96,6 +93,7 @@ public class TestSelenium implements IAbstractTest {
         HomePage homePage = new HomePage(driver);
         homePage.open();
 
+        homePage.clickNavigationBtn();
         homePage.clickDownloadsLink();
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains("/downloads/"), "Should navigate to downloads page");

@@ -1,0 +1,3 @@
+[2025-11-02 12:17:59] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-11-02 12:17:59] [1] [INFO] TEST [SeleniumTest - testSearchInput] STARTED at [14:17:59 2025-11-02]
+[2025-11-02 12:18:13] [1] [INFO] TEST [SeleniumTest - testSearchInput] PASSED at [14:18:13 2025-11-02]
