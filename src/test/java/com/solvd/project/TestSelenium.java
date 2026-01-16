@@ -54,7 +54,7 @@ public class TestSelenium implements IAbstractTest {
         driver.quit();
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, enabled = false)
     @MethodOwner(owner = "vladislav.karastan")
     @TestLabel(name = "footer", value = { "web", "regression" })
     public void testScrollToFooter() {

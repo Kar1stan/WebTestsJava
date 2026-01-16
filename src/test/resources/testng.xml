@@ -10,6 +10,10 @@
               <include name="testSearchInput"/>
               <include name="testDownloadsLink"/>
        </methods>
+      <class name="com.solvd.project.TestItems"/>
+       <methods>
+              <include name="testClickSecondItem"/>
+       </methods>
     </classes>
   </test>
 </suite>

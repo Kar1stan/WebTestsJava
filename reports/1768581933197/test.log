@@ -1,0 +1,12 @@
+[2026-01-16 04:45:33] [1] [INFO] 
+=========== WebDriver configuration ===========
+browser=chrome
+-------------- Driver capabilities ------------
+===============================================
+
+[2026-01-16 04:45:33] [1] [WARN] Reporting disabled: using no op test run registrar
+[2026-01-16 04:45:35] [1] [INFO] Set thread-count=1
+[2026-01-16 04:45:35] [1] [INFO] Set data-provider-thread-count=1
+[2026-01-16 04:45:35] [1] [INFO] CARINA_CORE_VERSION: 1.3.0
+[2026-01-16 04:45:37] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2026-01-16 04:45:37] [1] [INFO] RESULT #1: TEST [SeleniumTest - testClickSecondItem] PASS [log=file://C:\TestProjects\HomeworksJava\WebTests\reports\1768581933197/3743508d-ad60-473a-96e1-b6803b20f5b1/test.log]

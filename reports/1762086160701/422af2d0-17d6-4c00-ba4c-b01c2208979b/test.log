@@ -1,3 +1,0 @@
-[2025-11-02 12:22:42] [1] [WARN] Reporting disabled: using no op test run registrar
-[2025-11-02 12:22:42] [1] [INFO] TEST [SeleniumTest - testDownloadsLink] STARTED at [14:22:42 2025-11-02]
-[2025-11-02 12:22:46] [1] [INFO] TEST [SeleniumTest - testDownloadsLink] PASSED at [14:22:46 2025-11-02]
